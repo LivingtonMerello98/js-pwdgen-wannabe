@@ -7,9 +7,13 @@
 </head>
 <body>
     <h1>Password Generator (not very safe)</h1>
-    <p>Password generated <span id="my_id"></span></p>
+    <p>Password generated <span id="my_id">here</span></p>
     <script type="text/javascript">
-        console.log("ciao mondo");
+
+        const name = prompt( "Please enter your name:" );
+        const lastName = prompt( "Please enter your last name:");
+        const favouriteColor =  prompt("What is your favorite color?");
+        document.getElementById("my_id").innerHTML = name +lastName + favouriteColor;
     </script>
 </body>
 </html>
